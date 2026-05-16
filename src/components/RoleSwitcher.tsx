@@ -48,7 +48,7 @@ export default function RoleSwitcher() {
 
       {open && (
         <div className="absolute right-0 z-50 mt-2 w-64 origin-top-right animate-slideUp">
-          <div className="panel rounded-2xl p-2">
+          <div className="rounded-2xl border border-white/10 bg-ink-950/95 p-2 shadow-2xl shadow-black/60 backdrop-blur-2xl ring-1 ring-electric-400/10">
             <div className="px-3 py-2 text-[10px] uppercase tracking-[0.22em] text-slate-500">
               Cambiar perspectiva de la demo
             </div>
