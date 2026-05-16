@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es-CL">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/ticketera-demo/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#03060f" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Pulse · Ticketera</title>
+    <script>
+      // SPA restore — devuelve la ruta original tras un redirect desde 404.html
+      ;(function (l) {
+        if (l.search[1] === '/') {
+          var decoded = l.search
+            .slice(1)
+            .split('&')
+            .map(function (s) {
+              return s.replace(/~and~/g, '&')
+            })
+            .join('?')
+          window.history.replaceState(
+            null,
+            '',
+            l.pathname.slice(0, -1) + decoded + l.hash,
+          )
+        }
+      })(window.location)
+    </script>
+    <script type="module" crossorigin src="/ticketera-demo/assets/index-DR2GbfRR.js"></script>
+    <link rel="stylesheet" crossorigin href="/ticketera-demo/assets/index-BNMODJl2.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
